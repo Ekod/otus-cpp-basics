@@ -1,1 +1,1 @@
-# otus-cpp-basics
+Otus CPP Basicd
