@@ -2,15 +2,8 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/argument.dir" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/check_value.dir" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/CMakeTmp" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/guessing_game.dir" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/guessinggame.dir" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/high_scores.dir" />
-      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug/CMakeFiles/random_value.dir" />
+      <excludeFolder url="file://$MODULE_DIR$/hw_3/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/hw_3/cmake-build-debug" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
