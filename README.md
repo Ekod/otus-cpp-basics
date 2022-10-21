@@ -1,1 +1,1 @@
-Otus CPP Basicd
+Otus CPP Basic
