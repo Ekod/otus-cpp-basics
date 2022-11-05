@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "05.homework",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "calculation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calculation-Debug-610180c04dd51c89ed38.json",
+					"name" : "calculation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "chrono_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-chrono_example-Debug-fe4a9f91c4722d9e2a1f.json",
+					"name" : "chrono_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "random_shuffle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-random_shuffle-Debug-3bfc10651330ec367e88.json",
+					"name" : "random_shuffle",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/cmake-build-debug",
+		"source" : "C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
