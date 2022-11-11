@@ -41,78 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target random_shuffle
-
-
-#############################################
-# Order-only phony target for random_shuffle
-
-build cmake_object_order_depends_target_random_shuffle: phony || CMakeFiles/random_shuffle.dir
-
-build CMakeFiles/random_shuffle.dir/random_shuffle.cpp.obj: CXX_COMPILER__random_shuffle_Debug C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/random_shuffle.cpp || cmake_object_order_depends_target_random_shuffle
-  DEP_FILE = CMakeFiles\random_shuffle.dir\random_shuffle.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\random_shuffle.dir
-  OBJECT_FILE_DIR = CMakeFiles\random_shuffle.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target random_shuffle
-
-
-#############################################
-# Link the executable random_shuffle.exe
-
-build random_shuffle.exe: CXX_EXECUTABLE_LINKER__random_shuffle_Debug CMakeFiles/random_shuffle.dir/random_shuffle.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\random_shuffle.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = random_shuffle.exe
-  TARGET_IMPLIB = librandom_shuffle.dll.a
-  TARGET_PDB = random_shuffle.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target chrono_example
-
-
-#############################################
-# Order-only phony target for chrono_example
-
-build cmake_object_order_depends_target_chrono_example: phony || CMakeFiles/chrono_example.dir
-
-build CMakeFiles/chrono_example.dir/chrono_example.cpp.obj: CXX_COMPILER__chrono_example_Debug C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/chrono_example.cpp || cmake_object_order_depends_target_chrono_example
-  DEP_FILE = CMakeFiles\chrono_example.dir\chrono_example.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\chrono_example.dir
-  OBJECT_FILE_DIR = CMakeFiles\chrono_example.dir
-
-build CMakeFiles/chrono_example.dir/src/main.cpp.obj: CXX_COMPILER__chrono_example_Debug C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/src/main.cpp || cmake_object_order_depends_target_chrono_example
-  DEP_FILE = CMakeFiles\chrono_example.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\chrono_example.dir
-  OBJECT_FILE_DIR = CMakeFiles\chrono_example.dir\src
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target chrono_example
-
-
-#############################################
-# Link the executable chrono_example.exe
-
-build chrono_example.exe: CXX_EXECUTABLE_LINKER__chrono_example_Debug CMakeFiles/chrono_example.dir/chrono_example.cpp.obj CMakeFiles/chrono_example.dir/src/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\chrono_example.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = chrono_example.exe
-  TARGET_IMPLIB = libchrono_example.dll.a
-  TARGET_PDB = chrono_example.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target calculation
 
 
@@ -174,10 +102,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build calculation: phony calculation.exe
 
-build chrono_example: phony chrono_example.exe
-
-build random_shuffle: phony random_shuffle.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -186,7 +110,7 @@ build random_shuffle: phony random_shuffle.exe
 #############################################
 # Folder: C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_5/cmake-build-debug
 
-build all: phony random_shuffle.exe chrono_example.exe calculation.exe
+build all: phony calculation.exe
 
 # =============================================================================
 # Built-in targets
