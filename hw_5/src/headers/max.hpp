@@ -6,7 +6,7 @@ public:
     Max() : m_max{std::numeric_limits<double>::max()} {}
 
     void update(double next) override {
-        if (next < m_max) {
+        if (next > m_max) {
             m_max = next;
         }
     }
