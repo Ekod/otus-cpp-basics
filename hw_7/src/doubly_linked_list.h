@@ -63,7 +63,7 @@ public:
         if (pos == 0) {
             c_start = c_start->next;
 
-            if (nullptr != c_start) {
+            if (c_start != nullptr) {
                 c_start->prev = nullptr;
             } else {
                 c_end = nullptr;
@@ -131,26 +131,26 @@ public:
     }
 
     T& operator[](int pos) {
-        if (c_start == nullptr) {
+        if (c_start == nullptr)
+        {
             throw std::runtime_error("ERROR: empty container");
         }
 
-        if (pos == 0) {
-            throw std::runtime_error("ERROR: invalid position");
-        }
-
         Node<T> *tmp = c_start;
-
         int i = 0;
-        while (tmp != nullptr && pos + 1 > i) {
+        while (tmp != nullptr && pos + 1 > i){
+            if (i == pos){
+                break;
+            }
             tmp = tmp->next;
             i++;
         }
 
-        if (tmp == nullptr) {
+        if (tmp == nullptr){
             throw std::runtime_error("ERROR: index outside the bounds of the array");
-        } else {
-            return tmp->next->value;
+        }
+        else{
+            return tmp->value;
         }
     }
 

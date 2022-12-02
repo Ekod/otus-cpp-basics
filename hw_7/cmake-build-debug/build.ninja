@@ -152,6 +152,13 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
+build test/CMakeFiles/Google_Tests_run.dir/test_main.cpp.obj: CXX_COMPILER__Google_Tests_run_Debug C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7/test/test_main.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = test\CMakeFiles\Google_Tests_run.dir\test_main.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -isystem C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7/test/lib/googletest/googletest/include -isystem C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7/test/lib/googletest/googletest
+  OBJECT_DIR = test\CMakeFiles\Google_Tests_run.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\Google_Tests_run.dir
+
 build test/CMakeFiles/Google_Tests_run.dir/contiguous_container_tests.cpp.obj: CXX_COMPILER__Google_Tests_run_Debug C$:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7/test/contiguous_container_tests.cpp || cmake_object_order_depends_target_Google_Tests_run
   DEP_FILE = test\CMakeFiles\Google_Tests_run.dir\contiguous_container_tests.cpp.obj.d
   FLAGS = -g
@@ -174,7 +181,7 @@ build test/CMakeFiles/Google_Tests_run.dir/dll_container_tests.cpp.obj: CXX_COMP
 #############################################
 # Link the executable test\Google_Tests_run.exe
 
-build test/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug test/CMakeFiles/Google_Tests_run.dir/contiguous_container_tests.cpp.obj test/CMakeFiles/Google_Tests_run.dir/dll_container_tests.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build test/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug test/CMakeFiles/Google_Tests_run.dir/test_main.cpp.obj test/CMakeFiles/Google_Tests_run.dir/contiguous_container_tests.cpp.obj test/CMakeFiles/Google_Tests_run.dir/dll_container_tests.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = test\CMakeFiles\Google_Tests_run.dir

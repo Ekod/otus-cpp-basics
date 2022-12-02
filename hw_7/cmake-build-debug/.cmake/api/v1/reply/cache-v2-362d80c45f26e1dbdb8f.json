@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/Project"
+			"value" : "C:/Program Files (x86)/07.homework"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -1606,70 +1606,6 @@
 			"value" : "[C:/Python37/python.exe][cfound components: Interpreter ][v3.7.0()]"
 		},
 		{
-			"name" : "GMOCK_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GMOCK_LIBRARY-NOTFOUND"
-		},
-		{
-			"name" : "GMOCK_LIBRARY_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GMOCK_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "GMOCK_MAIN_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GMOCK_MAIN_LIBRARY-NOTFOUND"
-		},
-		{
-			"name" : "GMOCK_MAIN_LIBRARY_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GMOCK_MAIN_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
 			"name" : "GTEST_HAS_ABSL",
 			"properties" : 
 			[
@@ -1680,98 +1616,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "OFF"
-		},
-		{
-			"name" : "GTEST_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GTEST_INCLUDE_DIR-NOTFOUND"
-		},
-		{
-			"name" : "GTEST_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GTEST_LIBRARY-NOTFOUND"
-		},
-		{
-			"name" : "GTEST_LIBRARY_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GTEST_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "GTEST_MAIN_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GTEST_MAIN_LIBRARY-NOTFOUND"
-		},
-		{
-			"name" : "GTEST_MAIN_LIBRARY_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "GTest_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for GTest."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GTest_DIR-NOTFOUND"
 		},
 		{
 			"name" : "Google_tests_BINARY_DIR",
@@ -1822,42 +1666,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7/cmake-build-debug"
-		},
-		{
-			"name" : "Project_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Ekod/Documents/prog/cpp/otus-cpp-basics/hw_7"
-		},
-		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
 			"properties" : 
 			[
@@ -1867,7 +1675,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files (x86)/Project"
+			"value" : "C:/Program Files (x86)/07.homework"
 		},
 		{
 			"name" : "_Python_EXECUTABLE",

@@ -2,81 +2,77 @@
 #include "../src/doubly_linked_list.h"
 
 TEST(DoublyLinkedList, CheckIfExists) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
 
-    ASSERT_EQ(ccnt.size(), 0);
+    ASSERT_EQ(dll.size(), 0);
 }
 
 TEST(DoublyLinkedList, PushBack) {
-    DoublyLinkedList<int> ccnt;
-
-    ccnt.push_back(30);
-    int lastElemIdx = ccnt.size() - 1;
-    int lastElem = ccnt[lastElemIdx];
-
-    ASSERT_EQ(lastElem, 30);
+    DoublyLinkedList<int> _cnt;
+    _cnt.push_back(999);
+    ASSERT_EQ(_cnt[0], 999);
 }
 
 TEST(DoublyLinkedList, PushStart) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
     for (int i = 0; i < 10; i++) {
-        ccnt.push_back(i);
+        dll.push_back(i);
     }
 
-    ccnt.insert(0, 30);
-    int firstElem = ccnt[0];
+    dll.insert(0, 30);
+    int firstElem = dll[0];
 
     ASSERT_EQ(firstElem, 30);
 }
 
 TEST(DoublyLinkedList, PushMiddle) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
 
     for (int i = 0; i < 10; i++) {
-        ccnt.push_back(i);
+        dll.push_back(i);
     }
 
-    int pos = ccnt.size() / 2;
-    ccnt.insert(pos, 20);
+    int pos = dll.size() / 2;
+    dll.insert(pos, 20);
 
-    int elem = ccnt[pos];
+    int elem = dll[pos];
 
     ASSERT_EQ(elem, 20);
 }
 
 TEST(DoublyLinkedList, PopBack) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
 
     for (int i = 0; i < 10; i++) {
-        ccnt.push_back(i);
+        dll.push_back(i);
     }
 
-    ccnt.erase(10);
-    ASSERT_EQ(ccnt[ccnt.size()], 9);
+    dll.erase(dll.size() - 1);
+    ASSERT_EQ(dll[dll.size() - 1], 9);
 }
 
 TEST(DoublyLinkedList, PopStart) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
 
     for (int i = 0; i < 10; i++) {
-        ccnt.push_back(i);
+        dll.push_back(i);
     }
 
-    ccnt.erase(1);
-    ASSERT_EQ(ccnt[0], 1);
+    dll.erase(0);
+    ASSERT_EQ(dll[0], 1);
 }
 
 TEST(DoublyLinkedList, PopMiddle) {
-    DoublyLinkedList<int> ccnt;
+    DoublyLinkedList<int> dll;
 
     for (int i = 0; i < 10; i++) {
-        ccnt.push_back(i);
+        dll.push_back(i);
     }
 
-    int midElemPos = ccnt.size() / 2;
-    ccnt.erase(5);
+    int midElemPos = dll.size() / 2;
+    dll.erase(midElemPos);
 
-    int midElemPostErase = ccnt[midElemPos];
+    int midElemPostErase = dll[midElemPos];
 
     ASSERT_EQ(midElemPostErase, 6);
 }

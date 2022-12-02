@@ -1,8 +1,0 @@
-//
-// Created by Ekod on 26.11.2022.
-//
-
-#ifndef INC_07_HOMEWORK_CINTOGUOUS_H
-#define INC_07_HOMEWORK_CINTOGUOUS_H
-
-#endif //INC_07_HOMEWORK_CINTOGUOUS_H

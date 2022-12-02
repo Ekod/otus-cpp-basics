@@ -14,9 +14,8 @@ public:
     };
 
     T &operator[](int index) const {
-        int lastElemIdx = p_size - 1;
 
-        if(index <= lastElemIdx){
+        if(index <= dataEnd()){
             return p_data[index];
         }
 
@@ -33,14 +32,12 @@ public:
     };
 
     void erase(int idx) {
-        int lastElemIdx = p_size - 1;
-
-        if(idx == lastElemIdx){
+        if(idx == dataEnd()){
             resize_data(p_size - 1);
             return;
         }
 
-        for (int i = idx; i < lastElemIdx; i++) {
+        for (int i = idx; i < dataEnd(); i++) {
             p_data[i] = p_data[i + 1];
         }
 
@@ -72,6 +69,10 @@ private:
     int p_size;
     int p_capacity;
     T *p_data;
+
+    auto dataEnd() const {
+        return p_size - 1;
+    }
 
     void add_capacity(int size) {
         T *tmp = new T[size];
