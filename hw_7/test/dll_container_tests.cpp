@@ -51,8 +51,8 @@ TEST(DoublyLinkedList, PopBack) {
         ccnt.push_back(i);
     }
 
-    ccnt.erase(9);
-    ASSERT_EQ(ccnt[ccnt.size()-1], 9);
+    ccnt.erase(10);
+    ASSERT_EQ(ccnt[ccnt.size()], 9);
 }
 
 TEST(DoublyLinkedList, PopStart) {
@@ -62,7 +62,7 @@ TEST(DoublyLinkedList, PopStart) {
         ccnt.push_back(i);
     }
 
-    ccnt.erase(0);
+    ccnt.erase(1);
     ASSERT_EQ(ccnt[0], 1);
 }
 
