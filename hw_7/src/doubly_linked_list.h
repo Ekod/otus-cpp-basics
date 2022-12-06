@@ -135,14 +135,13 @@ public:
             throw std::runtime_error("ERROR: empty container");
         }
 
-        if (pos == 0) {
-            throw std::runtime_error("ERROR: invalid position");
-        }
-
         Node<T> *tmp = c_start;
 
         int i = 0;
         while (tmp != nullptr && pos + 1 > i) {
+            if (pos == i) {
+                break;
+            }
             tmp = tmp->next;
             i++;
         }
@@ -150,7 +149,7 @@ public:
         if (tmp == nullptr) {
             throw std::runtime_error("ERROR: index outside the bounds of the array");
         } else {
-            return tmp->next->value;
+            return tmp->value;
         }
     }
 
