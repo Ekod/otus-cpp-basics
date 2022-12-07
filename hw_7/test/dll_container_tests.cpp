@@ -106,3 +106,25 @@ TEST(DoublyLinkedList, GetSize) {
 
     ASSERT_EQ(want, got);
 }
+
+TEST(DoublyLinkedList, Destructor) {
+    static int num_of_destructions;
+
+    struct DestructorChecker{
+        ~DestructorChecker(){
+            num_of_destructions++;
+        }
+    };
+
+    DoublyLinkedList<DestructorChecker> ccnt;
+
+    for (int i = 0; i < 10; i++) {
+        DestructorChecker destructorChecker = DestructorChecker();
+        ccnt.push_back(destructorChecker);
+    }
+
+    int want = 10;
+    int got = num_of_destructions;
+
+    ASSERT_EQ(want, got);
+}

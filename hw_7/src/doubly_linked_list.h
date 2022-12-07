@@ -21,6 +21,19 @@ public:
         c_size = 0;
     };
 
+    ~DoublyLinkedList() {
+        auto tmp_node = c_start;
+        Node<T>* node_to_delete;
+
+        while(tmp_node != nullptr){
+            node_to_delete = tmp_node;
+            tmp_node = tmp_node->next;
+
+            delete node_to_delete;
+        }
+    };
+
+
     void push_back(const T &value) {
         auto *node = new Node<T>;
         node->value = value;
