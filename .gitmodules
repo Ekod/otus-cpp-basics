@@ -1,0 +1,6 @@
+[submodule "hw_7/googletest"]
+	path = hw_7/googletest
+	url = https://github.com/google/googletest
+[submodule "hw_7/test/lib/googletest"]
+	path = hw_7/test/lib/googletest
+	url = https://github.com/google/googletest
