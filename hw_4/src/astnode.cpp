@@ -3,8 +3,8 @@
 ASTNode::ASTNode(const std::string &repr)
         : repr_(repr), lhs_{nullptr}, rhs_{nullptr} {}
 
-ASTNode::ASTNode(const std::string &repr, ASTNode *lhs, ASTNode *rhs)
-        : repr_(repr), lhs_{lhs}, rhs_{rhs} {}
+ASTNode::ASTNode(std::string repr, ASTNode *lhs, ASTNode *rhs)
+        : repr_(std::move(repr)), lhs_{lhs}, rhs_{rhs} {}
 
 ASTNode::~ASTNode() {
     delete lhs_;

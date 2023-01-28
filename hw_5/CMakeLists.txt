@@ -8,7 +8,7 @@ add_executable(
         src/main.cpp
 )
 set_target_properties(calculation PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
-target_include_directories(calculation PRIVATE headers)
+target_include_directories(calculation PRIVATE  ${CMAKE_CURRENT_SOURCE_DIR}/src/headers)
 
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR

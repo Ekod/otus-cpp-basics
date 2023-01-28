@@ -1,9 +1,9 @@
 #include <iostream>
-#include "headers/statistics.hpp"
-#include "headers/min.hpp"
-#include "headers/std.hpp"
-#include "headers/mean.hpp"
-#include "headers/max.hpp"
+#include "statistics.hpp"
+#include "min.hpp"
+#include "std.hpp"
+#include "mean.hpp"
+#include "max.hpp"
 
 int main() {
 

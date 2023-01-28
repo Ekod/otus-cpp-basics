@@ -11,7 +11,7 @@ class ASTNode {
 public:
     explicit ASTNode(const std::string &repr);
 
-    ASTNode(const std::string &repr, ASTNode *lhs, ASTNode *rhs);
+    ASTNode(std::string repr, ASTNode *lhs, ASTNode *rhs);
 
     ASTNode(const ASTNode &other) = default;
 
