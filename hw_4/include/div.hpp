@@ -4,5 +4,5 @@
 
 class Div : public ASTNode {
 public:
-    Div(ASTNode *lhs, ASTNode *rhs): ASTNode("/", lhs, rhs){}
+    Div(ASTNode *lhs, ASTNode *rhs) : ASTNode("/", lhs, rhs) {}
 };

@@ -15,7 +15,7 @@ public:
         return m_max;
     }
 
-    const char* name() const override {
+    const char *name() const override {
         return "max";
     }
 

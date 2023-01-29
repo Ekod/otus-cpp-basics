@@ -4,5 +4,5 @@
 
 class Add : public ASTNode {
 public:
-    Add(ASTNode *lhs, ASTNode *rhs): ASTNode("+", lhs, rhs){}
+    Add(ASTNode *lhs, ASTNode *rhs) : ASTNode("+", lhs, rhs) {}
 };

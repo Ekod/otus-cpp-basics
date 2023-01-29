@@ -16,14 +16,14 @@ public:
         double std = 0;
         double mean = m_sum / m_quantity;
 
-        for (const double& value : m_vec) {
+        for (const double &value: m_vec) {
             std += pow(value - mean, 2);
         }
 
         return sqrt(std / m_quantity);
     }
 
-    const char* name() const override { return "std"; }
+    const char *name() const override { return "std"; }
 
 private:
     double m_sum;

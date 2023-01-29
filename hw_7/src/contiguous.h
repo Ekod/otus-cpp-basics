@@ -16,7 +16,7 @@ public:
     T &operator[](int index) const {
         int lastElemIdx = p_size - 1;
 
-        if(index <= lastElemIdx){
+        if (index <= lastElemIdx) {
             return p_data[index];
         }
 
@@ -35,7 +35,7 @@ public:
     void erase(int idx) {
         int lastElemIdx = p_size - 1;
 
-        if(idx == lastElemIdx){
+        if (idx == lastElemIdx) {
             resize_data(p_size - 1);
             return;
         }

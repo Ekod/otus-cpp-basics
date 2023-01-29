@@ -15,7 +15,7 @@ public:
         return m_min;
     }
 
-    const char* name() const override {
+    const char *name() const override {
         return "min";
     }
 

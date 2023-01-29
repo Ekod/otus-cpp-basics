@@ -11,7 +11,7 @@ public:
 
     double eval() const override { return m_sum / m_quantity; }
 
-    const char* name() const override { return "mean"; }
+    const char *name() const override { return "mean"; }
 
 private:
     double m_sum;

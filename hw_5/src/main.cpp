@@ -17,7 +17,7 @@ int main() {
 
     double val = 0;
     while (std::cin >> val) {
-        for (IStatistics* statistic : statistics) {
+        for (IStatistics *statistic: statistics) {
             statistic->update(val);
         }
     }
@@ -29,12 +29,12 @@ int main() {
     }
 
     // Print results if any
-    for (IStatistics* statistic : statistics) {
+    for (IStatistics *statistic: statistics) {
         std::cout << statistic->name() << " = " << statistic->eval() << std::endl;
     }
 
     // Clear memory - delete all objects created by new
-    for (IStatistics* statistic : statistics) {
+    for (IStatistics *statistic: statistics) {
         delete statistic;
     }
 

@@ -2,7 +2,7 @@
 #include <string>
 #include "argument.h"
 
-int parse_cmd_arguments(int argc, char** argv){
+int parse_cmd_arguments(int argc, char **argv) {
     // argc - it is a count of arguments
     // But there is some detail - OS always pass one system argument - the name of the executable
     // So, is the application was executed without arguments at all, argc will be still == 1
@@ -18,7 +18,7 @@ int parse_cmd_arguments(int argc, char** argv){
         std::cout << "We have one more argument!" << std::endl;
         std::cout << "argv[1] = " << argv[1] << std::endl;
 
-        std::string arg1_value{ argv[1] };
+        std::string arg1_value{argv[1]};
         if (arg1_value == "-parameter") {
             std::cout << "-parameter argument was detected!" << std::endl;
 

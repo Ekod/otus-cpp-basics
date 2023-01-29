@@ -23,9 +23,9 @@ public:
 
     ~DoublyLinkedList() {
         auto tmp_node = c_start;
-        Node<T>* node_to_delete;
+        Node<T> *node_to_delete;
 
-        while(tmp_node != nullptr){
+        while (tmp_node != nullptr) {
             node_to_delete = tmp_node;
             tmp_node = tmp_node->next;
 
@@ -143,7 +143,7 @@ public:
         }
     }
 
-    T& operator[](int pos) {
+    T &operator[](int pos) {
         if (c_start == nullptr) {
             throw std::runtime_error("ERROR: empty container");
         }

@@ -5,7 +5,7 @@
 template<typename T>
 class Node {
 public:
-    Node() : prev{nullptr}, next{nullptr}{};
+    Node() : prev{nullptr}, next{nullptr} {};
 
     Node<T> *prev;
     Node<T> *next;
@@ -125,7 +125,7 @@ public:
 
                 c_size++;
             } else {
-                throw std::runtime_error( "ERROR: null node");
+                throw std::runtime_error("ERROR: null node");
             }
         }
     }

@@ -3,7 +3,7 @@
 #include <string>
 #include "high_scores.h"
 
-std::string get_name(){
+std::string get_name() {
     // Ask about name
     std::cout << "Hi! Enter your name, please:" << std::endl;
     std::string user_name;
@@ -12,7 +12,7 @@ std::string get_name(){
     return user_name;
 }
 
-int write_to_file(const std::string& high_scores_filename, const std::string& user_name, const int& attempts_count){
+int write_to_file(const std::string &high_scores_filename, const std::string &user_name, const int &attempts_count) {
     // Write new high score to the records table
     {
         // We should open the output file in the append mode - we don't want
@@ -32,7 +32,7 @@ int write_to_file(const std::string& high_scores_filename, const std::string& us
     return 0;
 }
 
-int read_from_file(const std::string& high_scores_filename){
+int read_from_file(const std::string &high_scores_filename) {
     // Read the high score file and print all results
     {
         std::ifstream in_file{high_scores_filename};

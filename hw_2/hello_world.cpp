@@ -4,10 +4,10 @@
 #include <iostream>
 
 int main() {
-	std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
 
-	example_function();
-	todo_move_me_out();
-	
-	return 0;
+    example_function();
+    todo_move_me_out();
+
+    return 0;
 }

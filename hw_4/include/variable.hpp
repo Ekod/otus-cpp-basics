@@ -5,8 +5,7 @@
 class Variable : public ASTNode {
 public:
     Variable(std::string val)
-            : ASTNode(val)
-            , val_(val) {}
+            : ASTNode(val), val_(val) {}
 
     std::string value() const { return val_; }
 

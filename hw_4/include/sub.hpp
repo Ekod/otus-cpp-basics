@@ -4,5 +4,5 @@
 
 class Sub : public ASTNode {
 public:
-    Sub(ASTNode *lhs, ASTNode *rhs): ASTNode("-", rhs, lhs){}
+    Sub(ASTNode *lhs, ASTNode *rhs) : ASTNode("-", rhs, lhs) {}
 };
