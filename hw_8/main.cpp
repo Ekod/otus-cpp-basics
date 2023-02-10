@@ -19,9 +19,9 @@ using Counter = std::map<std::string, std::size_t>;
 
 std::string tolower(const std::string &str);
 
-void count_words(std::istream& stream, Counter&);
+void count_words(std::istream &stream, Counter &);
 
-void print_topk(std::ostream& stream, const Counter&, const size_t k);
+void print_topk(std::ostream &stream, const Counter &, const size_t k);
 
 std::mutex mutex{};
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
         });
     }
 
-    for(auto &thread : threadVec){
+    for (auto &thread: threadVec) {
         thread.join();
     }
 
@@ -63,22 +63,21 @@ std::string tolower(const std::string &str) {
     return lower_str;
 };
 
-void count_words(std::istream& stream, Counter& counter) {
+void count_words(std::istream &stream, Counter &counter) {
     std::map<std::string, std::size_t> local;
     std::for_each(std::istream_iterator<std::string>(stream),
                   std::istream_iterator<std::string>(),
                   [&local](const std::string &s) {
-        ++local[tolower(s)];
-    });
+                      ++local[tolower(s)];
+                  });
 
-    mutex.lock();
-    for(const auto &item : local){
+    std::lock_guard<std::mutex> lock(mutex);
+    for (const auto &item: local) {
         counter[item.first] += item.second;
     }
-    mutex.unlock();
 }
 
-void print_topk(std::ostream& stream, const Counter& counter, const size_t k) {
+void print_topk(std::ostream &stream, const Counter &counter, const size_t k) {
     std::vector<Counter::const_iterator> words;
     words.reserve(counter.size());
     for (auto it = std::cbegin(counter); it != std::cend(counter); ++it) {

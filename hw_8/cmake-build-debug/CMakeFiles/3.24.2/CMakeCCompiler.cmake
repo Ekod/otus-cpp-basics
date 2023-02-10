@@ -19,6 +19,8 @@ set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_C_SIMULATE_VERSION "")
 
 
+
+
 set(CMAKE_AR "C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/bin/ar.exe")
 set(CMAKE_C_COMPILER_AR "C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/bin/gcc-ar.exe")
 set(CMAKE_RANLIB "C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/bin/ranlib.exe")
@@ -43,22 +45,25 @@ set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
-if (CMAKE_C_SIZEOF_DATA_PTR)
-    set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")
-endif ()
+if(CMAKE_C_SIZEOF_DATA_PTR)
+  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")
+endif()
 
-if (CMAKE_C_COMPILER_ABI)
-    set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")
-endif ()
+if(CMAKE_C_COMPILER_ABI)
+  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")
+endif()
 
-if (CMAKE_C_LIBRARY_ARCHITECTURE)
-    set(CMAKE_LIBRARY_ARCHITECTURE "")
-endif ()
+if(CMAKE_C_LIBRARY_ARCHITECTURE)
+  set(CMAKE_LIBRARY_ARCHITECTURE "")
+endif()
 
 set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")
-if (CMAKE_C_CL_SHOWINCLUDES_PREFIX)
-    set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")
-endif ()
+if(CMAKE_C_CL_SHOWINCLUDES_PREFIX)
+  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")
+endif()
+
+
+
 
 
 set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/include;C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Program Files/JetBrains/CLion 2022.2/bin/mingw/x86_64-w64-mingw32/include")

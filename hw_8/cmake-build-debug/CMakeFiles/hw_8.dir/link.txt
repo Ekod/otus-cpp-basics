@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\hw_8.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\hw_8.dir/objects.a @CMakeFiles\hw_8.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\hw_8.dir/objects.a -Wl,--no-whole-archive -o hw_8.exe -Wl,--out-implib,libhw_8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hw_8.dir\linklibs.rsp
